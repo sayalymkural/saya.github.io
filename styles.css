@@ -1,0 +1,317 @@
+/* ===== Общие стили ===== */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #f7f7f7, #e5e5e5);
+  color: #222;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+  margin-top: 0;
+}
+
+/* ===== Header & Navbar ===== */
+.header {
+  background-image: url("cool\ \(1\).jpeg");
+  background-size: cover;
+  background-position: center;
+  color: #ffcc00;
+  text-align: center;
+  padding: 50px 20px;
+  letter-spacing: 1px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.4em;
+}
+
+.navbar {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.navbar a {
+  background: #ffcc00;
+  color: #1c1c1c;
+  margin: 0 8px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  background: #1c1c1c;
+  color: #ffcc00;
+  border: 1px solid #ffcc00;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  width: 20%;
+  background: #1c1c1c;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  float: left;
+}
+
+.sidebar h3 {
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+}
+
+.sidebar ul li a {
+  color: #ffcc00;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+  color: white;
+}
+
+/* ===== Контент по умолчанию ===== */
+.content {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* ===== Только для Task1 ===== */
+.content.task1 {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* текст внизу */
+  text-align: left;          /* текст слева */
+  padding: 40px 25px;
+  float: right;
+  width: 70%;
+}
+
+/* ===== Footer ===== */
+.footer {
+  clear: both;
+  background: #1c1c1c;
+  color: #ffcc00;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9em;
+  box-shadow: 0 -3px 10px rgba(0,0,0,0.4);
+}
+
+/* ===== Tribute Page (Task 2) ===== */
+.portrait {
+  display: block;
+  margin: 25px auto;
+  max-width: 300px;
+  border-radius: 15px;
+  border: 5px solid #ffcc00;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.btn {
+  display: inline-block;
+  background: #ffcc00;
+  color: #1c1c1c;
+  padding: 12px 25px;
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #1c1c1c;
+  color: #ffcc00;
+  border: 1px solid #ffcc00;
+  transform: scale(1.05);
+}
+
+/* ===== Table (Task 3) ===== */
+#table-title {
+  text-align: center;
+  color: #1c1c1c;
+}
+
+table {
+  width: 85%;
+  margin: 25px auto;
+  border-collapse: collapse;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+}
+
+th, td {
+  border: 1px solid #555;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background: #1c1c1c;
+  color: #ffcc00;
+}
+
+tr:nth-child(even) {
+  background: #f1f1f1;
+}
+
+.highlight-row {
+  background: #ffcc00;
+  color: #1c1c1c;
+  font-weight: bold;
+}
+
+/* ===== Form (Task 3) ===== */
+form {
+  width: 60%;
+  margin: 30px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 12px;
+  color: #1c1c1c;
+}
+
+input, select, textarea {
+  width: 100%;
+  margin: 10px 0 18px 0;
+  padding: 12px;
+  border: 1px solid #1c1c1c;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #ffcc00;
+  outline: none;
+}
+
+button {
+  background: #ffcc00;
+  color: #1c1c1c;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1c1c1c;
+  color: #ffcc00;
+  border: 1px solid #ffcc00;
+}
+
+/* ===== Task 4 Hero Section ===== */
+.hero {
+  height: 80vh;
+  background: url("images/hero-bg.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffcc00;
+  padding: 20px;
+}
+
+.hero-text h2 {
+  font-size: 3.5em;
+  margin-bottom: 15px;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.5);
+}
+
+.hero-text p {
+  font-size: 1.2em;
+  margin-bottom: 25px;
+  color: #251313;
+}
+
+.hero .btn {
+  display: inline-block;
+  background: #ffcc00;
+  color: #0b0808;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.hero .btn:hover {
+  background: #050101;
+  color: #ffcc00;
+  border: 1px solid #ffcc00;
+}
+
+/* ===== Gallery Cards ===== */
+.gallery {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 200px;          /* фиксированная ширина */
+  height: 200px;         /* фиксированная высота */
+  object-fit: cover;     /* подгоняет изображение без искажения */
+  border-radius: 8px;
+  border: 2px solid #ffcc00; /* тонкая желтая рамка */
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* ===== Универсальная тонкая желтая рамка для всех изображений ===== */
+img.portrait {
+  border: 5px solid #ffcc00; /* толстая рамка для портретов */
+}
+
+img:not(.portrait) {
+  border: 2px solid #ffcc00; /* тонкая рамка для всех остальных изображений */
+  border-radius: 8px;
+}
